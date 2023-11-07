@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title_head %}
+<title>Creación Producto</title>
+{% endblock title_head %}
+
+{% block h1 %}
+<h1 class="text-white font-weight-bold">Creación productos</h1>
+{% endblock h1 %}
+
+
+{% block main %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{formulario}}
+    <input type="submit" value="Crear">
+</form>
+
+{% endblock main %}
+
+

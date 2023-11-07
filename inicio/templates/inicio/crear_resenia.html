@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title_head %}
+<title>Crear reseña</title>
+{% endblock title_head %}
+
+{% block h1 %}
+<h1 class="text-white font-weight-bold">Agregar categoria</h1>
+{% endblock h1 %}
+
+
+{% block main %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{formulario}}
+    <input type="submit" value="Publicar reseña">
+</form>
+
+{% endblock main %}
+

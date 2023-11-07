@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title_head %}
+<title>Productos</title>
+{% endblock title_head %}
+
+{% block h1 %}
+<h1 class="text-white font-weight-bold">Productos</h1>
+{% endblock h1 %}
+
+
+
+{% block main %}
+
+<form action="">
+    {{formulario}}
+    <input type="submit" value="Buscar">
+</form>
+{% if listado_productos %}
+<ul>
+    {% for producto in listado_productos %}
+    <li>{{producto}}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p>No se encontró el producto.</p>
+{% endif %}
+
+{% endblock main %}
+
